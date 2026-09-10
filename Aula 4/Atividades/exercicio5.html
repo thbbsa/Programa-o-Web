@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Usuários do Sistema Interno</title>
+</head>
+
+<body>
+
+    <b>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</b>
+
+    <form>
+        <table border="0" cellpadding="5">
+            <tr>
+                <td>Login</td>
+                <td><input type="text" name="login"></td>
+            </tr>
+            <tr>
+                <td>Senha</td>
+                <td><input type="password" name="senha"></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td>
+                    <select name="status">
+                        <option>Inativo</option>
+                        <option>Ativo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tipo</td>
+                <td>
+                    <input type="radio" name="tipo" value="tecnico"> Técnico
+                    <input type="radio" name="tipo" value="professor"> Professor
+                    <input type="radio" name="tipo" value="aluno"> Aluno
+                </td>
+            </tr>
+            <tr>
+                <td>Data Criação</td>
+                <td><input type="text" name="data_criacao"></td>
+            </tr>
+            <tr>
+                <td>Perfil</td>
+                <td>
+                    <input type="radio" name="perfil" value="convidado"> Convidado
+                    <input type="radio" name="perfil" value="administrador"> Administrador
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Observações</td>
+                <td><textarea name="observacoes" rows="5" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td valign="top">Módulos</td>
+                <td>
+                    <input type="checkbox" name="modulo_compras"> Compras
+                    <input type="checkbox" name="modulo_biblioteca"> Biblioteca
+                    <input type="checkbox" name="modulo_academico"> Acadêmico
+                    <br><br>
+                    <input type="checkbox" name="modulo_documentacao"> Documentação
+                    <input type="checkbox" name="modulo_rh"> Recursos Humanos
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Excluir">
+    </form>
+
+</body>
+
+</html>
