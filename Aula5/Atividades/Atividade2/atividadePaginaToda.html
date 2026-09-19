@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fundoAzul {
+            background-color: lightblue;
+        }
+
+        .paragrafoVerde {
+            background-color: lightgreen;
+        }
+
+        .imagemRepetidaFixa {
+            background-image: url('carro.png');
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+
+        .imagemVertical {
+            background-image: url('carro.png');
+            background-repeat: repeat-y;
+            background-size: 150px;
+        }
+
+        .imagemSemRepetir {
+            background-image: url('carro.png');
+            background-repeat: no-repeat;
+            background-size: 200px;
+        }
+
+        .imagemCentralizada {
+            background-image: url('carro.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .fundoAmareloComImagem {
+            background-color: yellow;
+            background-image: url('carro.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+        }
+
+        div,
+        p {
+            height: 200px;
+            margin-bottom: 10px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fundoAzul">
+        <h2>Fundo da página em azul claro</h2>
+    </div>
+
+    <p class="paragrafoVerde">Parágrafo com fundo verde claro</p>
+
+    <div class="imagemRepetidaFixa">
+        <h2>Imagem repetida e fixa (não rola com a página)</h2>
+    </div>
+
+    <div class="imagemVertical">
+        <h2>Imagem repetida apenas na vertical</h2>
+    </div>
+
+    <div class="imagemSemRepetir">
+        <h2>Imagem sem repetição</h2>
+    </div>
+
+    <div class="imagemCentralizada">
+        <h2>Imagem sem repetição, centralizada</h2>
+    </div>
+
+    <div class="fundoAmareloComImagem">
+        <h2>Fundo amarelo, imagem centralizada, sem repetir, acompanhando o scroll</h2>
+    </div>
+
+</body>
+</html>
