@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            [title] {
+                border: 4px solid red;
+            }
+
+            [title="Página 3"] {
+                color: green;
+            }
+
+            [title~="K19"] {
+                padding: 10px;
+                background: yellow;
+            }
+
+            [title^="Link"] {
+                margin-right: 30px;
+            }
+
+            [href$="link"] {
+                outline: 4px solid blue;
+            }
+
+            [src*="large"] {
+                border: 4px solid green;
+            }
+
+            [href|="#link"] {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="pagina3.html" title="Página 3">Página 3</a>
+        <a href="https://pt.wikipedia.org/wiki/K-19_(submarino)" title="K19 Submarino">K-19 (submarino)</a>
+        <a href="https://www.google.com" title="LinkExterno">Google</a>
+        <a href="pagina-link">Página 4</a>
+        <img src="image-large.png" alt="Carro">
+        <a href="#link-secao">Link para seção</a>
+    </body>
+</html>

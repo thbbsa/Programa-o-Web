@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 700px;
+            }
+
+            caption {
+                background-color: yellow;
+                color: green;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 5px;
+            }
+
+            th,
+            td {
+                border: 3px solid green;
+                padding: 10px;
+                text-align: center;
+            }
+
+            th {
+                background-color: #fff;
+            }
+
+            td:first-child {
+                text-align: left;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #e6f4e6;
+            }
+
+            tr.destaque td {
+                background-color: yellow;
+                color: green;
+                font-weight: bold;
+            }
+
+            tbody tr:hover {
+                background-color: yellow;
+                color: green;
+            }
+
+            img {
+                height: 24px;
+                width: 24px;
+                object-fit: contain;
+                float: right;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table border="1">
+            <caption>Campeões Brasileiros da Libertadores</caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>QTD</th>
+                    <th>Ano(s)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>São Paulo <img src="sao-paulo.png" alt="São Paulo"></td>
+                    <td>3</td>
+                    <td>1992, 1993 e 2005</td>
+                </tr>
+
+                <tr>
+                    <td>Cruzeiro <img src="cruzeiro.png" alt="Cruzeiro"></td>
+                    <td>2</td>
+                    <td>1976 e 1997</td>
+                </tr>
+
+                <tr>
+                    <td>Grêmio <img src="gremio.png" alt="Grêmio"></td>
+                    <td>2</td>
+                    <td>1983 e 1995</td>
+                </tr>
+
+                <tr>
+                    <td>Santos <img src="santos.png" alt="Santos"></td>
+                    <td>2</td>
+                    <td>1962 e 1963</td>
+                </tr>
+
+                <tr>
+                    <td>Inter <img src="inter.png" alt="Inter"></td>
+                    <td>1</td>
+                    <td>2006</td>
+                </tr>
+
+                <tr>
+                    <td>Palmeiras <img src="palmeiras.png" alt="Palmeiras"></td>
+                    <td>1</td>
+                    <td>1999</td>
+                </tr>
+
+                <tr>
+                    <td>Vasco <img src="vasco.png" alt="Vasco"></td>
+                    <td>1</td>
+                    <td>1998</td>
+                </tr>
+
+                <tr>
+                    <td>Flamengo <img src="flamengo.png" alt="Flamengo"></td>
+                    <td>1</td>
+                    <td>1981</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>
